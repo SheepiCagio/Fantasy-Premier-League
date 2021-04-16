@@ -1,0 +1,5 @@
+,id,name,short_name,created,closed,rank,max_entries,league_type,scoring,admin_entry,start_event,entry_rank,entry_last_rank,entry_can_leave,entry_can_admin,entry_can_invite
+0,172,Netherlands,region-152,2020-08-15T09:00:49.707027Z,False,,,s,c,,1,7864,7547,False,False,False
+1,276,Gameweek 1,event-1,2020-08-15T09:00:52.298412Z,False,,,s,c,,1,2548753,2430762,False,False,False
+2,314,Overall,overall,2020-08-15T09:00:54.021038Z,False,,,s,c,,1,2621039,2487200,False,False,False
+3,44868,Borrels En Financials League,,2020-08-15T15:57:01.096776Z,False,,,x,c,9065.0,1,17,15,True,False,False
