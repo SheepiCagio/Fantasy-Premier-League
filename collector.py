@@ -62,10 +62,9 @@ def merge_gw(gw, gw_directory):
     for row in rows:
         writer.writerow(row)
 
-def collect_gw(gw, directory_name, output_dir):
+def collect_gw(gw, directory_name, output_dir, root_directory_name="data/2021-22"):
     rows = []
     fieldnames = []
-    root_directory_name = "data/2020-21/"
     fixtures_home, fixtures_away = get_fixtures(root_directory_name)
     teams = get_teams(root_directory_name)
     names, positions = get_positions(root_directory_name)
@@ -89,7 +88,10 @@ def collect_gw(gw, directory_name, output_dir):
                             row['team'] = teams[fixtures_away[fixture]]
                         row['name'] = name
                         row['position'] = position
-                        row['xP'] = xPoints[id]
+                        if id in xPoints:
+                            row['xP'] = xPoints[id]
+                        else:
+                            row['xP'] = 0.0
                         rows += [row]
 
     fieldnames = ['name', 'position', 'team', 'xP'] + fieldnames
@@ -110,7 +112,7 @@ def merge_all_gws(num_gws, gw_directory):
 def main():
     #collect_all_gws(sys.argv[1], sys.argv[2])
     merge_all_gws(int(sys.argv[1]), sys.argv[2])
-    #collect_gw(39, sys.argv[1], sys.argv[2])
+    #collect_gw(35, sys.argv[1], sys.argv[2])
 
 if __name__ == '__main__':
     main()

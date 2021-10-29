@@ -1,4 +1,5 @@
 [![GitSpo Mentions](https://gitspo.com/badges/mentions/vaastav/Fantasy-Premier-League?style=flat-square)](https://gitspo.com/mentions/vaastav/Fantasy-Premier-League)
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?hosted_button_id=RQ2V64LXSKPV4)
 
 Fantasy-Premier-League
 ======================
@@ -7,6 +8,8 @@ A FPL library that gets all the basic stats for each player, gw-specific data fo
 
 ### Acknowledgement
 
++ rin-hairie for adding master team lists and merge scripts
++ ergest for adding merged_gw.csv files for 2016-17 and 2017-18 seasons
 + BDooley11 for providing top managers script
 + speeder1987 for providing 2018/19 fixtures.csv file
 + ravgeetdhillon for github actions automation for data update
@@ -31,6 +34,10 @@ In players_raw.csv, element_type is the field that corresponds to the position.
 3 = MID
 4 = FWD
 
+### Errata
+
++ GW35 expected points data is wrong (all values are 0).
+
 ### Contributing
 
 + If you feel like there is some data that is missing which you would like to see, then please feel free to create a PR or create an issue highlighting what is missing and what you would like to be added
@@ -52,6 +59,18 @@ python teams_scraper.py <team_id>
 This will create a new folder called "team_<team_id>_data18-19" with individual files of all the important data
 
 # Notable Usages of this Repository
+
++ [Point Predictor via Random Forests by Francesco Barbara](https://github.com/francescobarbara/FPL-point-predictor-via-random-forests)
+
++ [Money (Foot)Ball – how will our virtual football team selected entirely by Machine Learning compete in the big leagues?](https://www.dtsquared.co.uk/money-football-how-will-our-virtual-football-team-selected-entirely-by-machine-learning-compete-in-the-big-leagues/)
+
++ [An introduction to SQL using FPL data by Liam Connors](https://towardsdatascience.com/an-introduction-to-sql-using-fpl-data-8314ec982308)
+
++ [Hindsight Optimization for FPL by Sertalp B. Cay](https://alpscode.com/blog/hindsight-optimization/)
+
++ [Data Science to get top 1% on return to FPL by James Asher](https://medium.com/the-sports-scientist/how-i-used-data-science-to-get-into-the-top-1-on-the-return-to-fantasy-premier-league-98829d4f65e5)
+
++ [FPLDASH: A customizable Fantasy Premier League Dashboard by Jin Hyun Cheong](http://www.fpldash.com)
 
 + [How to win at Fantasy Football with Splunk and Machine Learning by Rupert Truman](https://www.splunk.com/en_us/blog/machine-learning/how-to-win-at-fantasy-football-with-splunk-and-machine-learning-part-1.html)
 
